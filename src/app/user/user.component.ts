@@ -3,10 +3,11 @@ import { DUMMY_USERS } from '../models/dummy-user.ts.service';
 
 
 @Component({
-  selector: 'app-user',
-  // standalone: true,
-  templateUrl: './user.component.html',
-  styleUrls: ['./user.component.scss']
+    selector: 'app-user',
+    // standalone: true,
+    templateUrl: './user.component.html',
+    styleUrls: ['./user.component.scss'],
+    standalone: false
 })
 export class UserComponent {
   selectedUser: any;
