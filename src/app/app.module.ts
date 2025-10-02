@@ -14,6 +14,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { ProductsComponent } from './products/products.component';
 import { UserComponent } from './user/user.component';
 import { HeaderComponent } from './header/header.component';
+import { Component, signal, computed } from '@angular/core';
 
 @NgModule({
   declarations: [
