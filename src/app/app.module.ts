@@ -15,12 +15,13 @@ import { ProductsComponent } from './products/products.component';
 import { UserComponent } from './user/user.component';
 import { HeaderComponent } from './header/header.component';
 import { Component, signal, computed } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     BodyComponent,
-    SidenavComponent,
+    // SidenavComponent,
     DashboardComponent,
     StatisticsComponent,
     CoupensComponent,
@@ -34,9 +35,12 @@ import { Component, signal, computed } from '@angular/core';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot([])
+
   ],
   providers: [],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }

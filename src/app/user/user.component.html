@@ -1,7 +1,7 @@
 <div>
   <button (click)="onSelectUser()">
     <ng-container *ngIf="selectedUser() as user; else noUser">
-      <img [src]="'assets/users/' + user.avatar" [alt]="user.name" />
+      <img [src]="imagePath + user.avatar" [alt]="user.name" />
       <span>{{ user.name }}</span>
     </ng-container>
     <ng-template #noUser>
